@@ -1,0 +1,16 @@
+
+.contenedor_nav{
+    background-color: #fff;
+    position: sticky;
+    width: 100%;
+    top: 0%;
+    text-align:center;  
+    box-shadow: #292929;
+    padding: 10px;
+}
+.nav-link{
+    color: #292929;;
+}
+.titulo_habilidades{
+    padding: 10px;
+}
