@@ -1,0 +1,25 @@
+<div class="cont_form">
+<form action="" (ngSubmit)="onSubmit()" class="form_skill" >
+    <h2>Agregar nueva Skill</h2>
+    <div>
+        <label for="">Titulo</label>    
+        <input type="text" name="title" id="" [(ngModel)]="title"> {{title}}
+    </div>
+    
+    <div>
+        <label for="">comentario</label>
+        <input type="text" name="comentario" id="" [(ngModel)]="comentario"> {{comentario}}
+    </div>
+    
+    <div>
+        <label for="">Link img</label>
+        <input type="text" name="img" id="" [(ngModel)]="img"> {{img}}
+    </div>
+    <button><a class="nav-link active" aria-current="page" routerLink="/" >Cancelar</a></button>
+    <input type="submit" value="Crear" class="btn_crear_skill">
+    
+    
+</form>
+
+
+</div>

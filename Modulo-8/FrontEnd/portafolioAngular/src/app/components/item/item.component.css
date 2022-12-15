@@ -1,0 +1,24 @@
+.row{
+    display: flex;  
+    box-sizing: border-box;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 300px;
+    margin: 20px;
+}
+.cont-actions{
+    padding: 0px 22px;
+}
+.img_icono{
+    width: 64px;
+}
+.cont_tex-ico{
+    display: flex;
+}
+.cont_btn-info{
+    padding: 12px;
+    
+}

@@ -1,0 +1,19 @@
+.app-skills{
+    background-color: rgb(217, 220, 245);
+    display: flex;
+    flex-wrap: wrap;
+    width: 1020px;
+    justify-content: flex-start;
+    /*background-color: rgb(146, 192, 230);*/
+}
+.contenedor_app-skills{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(252, 252, 252);
+}
+.btn_add-skill{
+    padding: 25px;
+    font-size: 20px;
+    color: rgb(47, 95, 228);
+    font-weight: 600;
+}

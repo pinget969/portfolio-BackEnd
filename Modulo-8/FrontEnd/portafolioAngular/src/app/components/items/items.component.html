@@ -1,0 +1,14 @@
+<div class="contenedor_app-skills">
+    <div class="app-skills">
+    <app-item  *ngFor="let item of items" 
+    [item]="item"
+    (deleteItem)="deleteItem($event)" >
+    </app-item>
+    <div>
+    <a class="nav-link btn_add-skill" routerLink="add">Agregar Nueva Skill</a>
+    </div>
+    </div>
+</div>
+
+
+

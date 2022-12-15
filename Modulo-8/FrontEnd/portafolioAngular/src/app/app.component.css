@@ -1,0 +1,14 @@
+.titulo_habilidades{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 20px;
+}
+.principal_app-skills{
+    /*background: red;*/
+    display: flex;
+    justify-content: center;
+    background-color: rgb(97, 162, 173);
+    
+}
+

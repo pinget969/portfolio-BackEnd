@@ -1,0 +1,8 @@
+.cont_img{
+    display: flex;
+    background: red;
+    
+}
+.cont_img img{
+    max-width: 100%;
+}
