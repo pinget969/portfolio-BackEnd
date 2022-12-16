@@ -16,6 +16,10 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProyectoJavaComponent } from './components/proyecto-java/proyecto-java.component';
 import { HttpClientModule } from "@angular/common/http";
 import { EditItemComponent } from './components/edit-item/edit-item.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +33,20 @@ import { EditItemComponent } from './components/edit-item/edit-item.component';
     ProyectoComponent,
     ProyectosComponent,
     ProyectoJavaComponent,
-    EditItemComponent
+    EditItemComponent,
+    FooterComponent,
+    ContactComponent,
+    HomeComponent
   ],
   imports: [ //import modulo de las app que queremos cargar / utilizar
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      { path: 'contact' , component:ContactComponent},
+      { path: 'home' , component:HomeComponent},
+    ])
   ],
   providers: [], //cargamos servicios
   bootstrap: [AppComponent] //indicamos el componente inicial princial donde cargará la pag
