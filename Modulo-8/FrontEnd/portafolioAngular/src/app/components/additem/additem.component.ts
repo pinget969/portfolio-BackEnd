@@ -1,8 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import { Item } from 'src/app/models/item';
-import { ItemService } from 'src/app/services/item.service';
-//import { Item } from 'src/app/models/Item';
+import { ItemService } from 'src/app/services/skillService/item.service';
 
 @Component({
   selector: 'app-additem',
@@ -10,12 +9,12 @@ import { ItemService } from 'src/app/services/item.service';
   styleUrls: ['./additem.component.css']
 })
 export class AdditemComponent implements OnInit {
-
+/* Revisar para borrar */
   id:number=0;
   title:string ='';
   comentario:string= '';
   img:string='';
-  
+  /* Revisar para borrar */
 
   constructor(private itemService:ItemService, private router:Router){ }
 
@@ -28,7 +27,6 @@ export class AdditemComponent implements OnInit {
     item.img = this.img;
     item.complete = false;
 
-    
     this.itemService.addItem(item)
     .subscribe(i =>{
       alert("Se agregó con exito");
@@ -36,6 +34,4 @@ export class AdditemComponent implements OnInit {
     });
     
   }
- 
-  
 }

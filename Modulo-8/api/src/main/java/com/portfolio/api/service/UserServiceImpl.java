@@ -1,4 +1,4 @@
-package com.portfolio.api.servie;
+package com.portfolio.api.service;
 
 import java.util.Optional;
 

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
 import { Item } from 'src/app/models/item';
-import { ItemService } from 'src/app/services/item.service';
+import { ItemService } from 'src/app/services/skillService/item.service';
 
 
 @Component({

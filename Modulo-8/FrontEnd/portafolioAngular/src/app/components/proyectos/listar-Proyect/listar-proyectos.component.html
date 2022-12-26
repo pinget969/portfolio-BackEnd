@@ -1,0 +1,27 @@
+<p id="proyectos" class="h2 d-flex justify-content-center">Proyectos Realizados</p>
+<div class="container">
+    <div class="row list-project" *ngFor="let proyect of proyects">
+            <div class="col-md-7">
+                <div>
+                    <a ><img src="./../../../assets/img/iconos/basura-16.png" (click)="DeleteProyect(proyect)" alt=""></a>
+                    <a ><img src="./../../../assets/img/iconos/lápiz-16.png" (click)="EditarProyect(proyect)" alt=""></a>
+                </div>
+                <div class="cont_img">
+                    <img src={{proyect.img}} alt="">
+                </div>
+        </div>
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5>{{proyect.title}}</h5>
+                <p>{{proyect.content}}</p>
+            </div>
+            <div class="project-info-box mb-10">
+                <p><b>Company:</b> {{proyect.company}}</p>
+                <p><b>Date:</b> {{proyect.date}}</p>
+                <p><b>Designer:</b> {{designer}}</p>
+                <p><b>Tools:</b> {{proyect.tools}}</p>
+            </div>
+            <a href="#" class="btn btn-primary d-block">VIEW PROJECT</a>
+        </div>
+    </div>
+</div>

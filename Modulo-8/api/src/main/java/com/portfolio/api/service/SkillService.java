@@ -1,5 +1,4 @@
-package com.portfolio.api.servie;
-
+package com.portfolio.api.service;
 import java.util.Optional;
 
 import org.springframework.data.domain.Page;
@@ -13,4 +12,5 @@ public interface SkillService {
 	public Optional<Skill>findById(Long id);
 	public Skill save(Skill skill);
 	public void deleteById(long id);
+
 }

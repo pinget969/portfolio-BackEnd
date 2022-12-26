@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.portfolio.api.entity.Skill;
-import com.portfolio.api.servie.SkillService;
+import com.portfolio.api.service.SkillService;
 
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
