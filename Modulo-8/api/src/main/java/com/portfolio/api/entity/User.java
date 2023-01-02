@@ -1,33 +1,39 @@
 package com.portfolio.api.entity;
 
-import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-
 
 
 @Entity
 @Table(name = "users")
-public class User implements Serializable {
-	private static final long serialVersionUID = 2631360987591494262L;
+public class User {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Column(length = 50)
 	private String username;
-	@Column(length = 14)
+	@Column(length = 80)
 	private String password;
 	@Column(nullable=false, length=50, unique = true)
 	private String email;
 	@Column
 	private Boolean enabled;
 	
+	@ManyToOne
+	private Rol rol;
 	
+	public Rol getRol() {
+		return rol;
+	}
+	public void setRol(Rol rol) {
+		this.rol = rol;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -58,5 +64,5 @@ public class User implements Serializable {
 	public void setEnabled(Boolean enabled) {
 		this.enabled = enabled;
 	}
-    
+	
 }

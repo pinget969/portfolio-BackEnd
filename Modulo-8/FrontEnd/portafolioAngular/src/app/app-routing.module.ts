@@ -5,7 +5,7 @@ import { EditItemComponent } from './components/edit-item/edit-item.component';
 import { HomeComponent } from './components/home/home.component';
 import { AddProyectComponent } from './components/proyectos/add-Proyect/add-proyect.component';
 import {EditProyectComponent} from './components/proyectos/edit-proyect/edit-proyect.component';
-
+import { LoginComponent } from './components/auth/login/login.component';
 
 
 const routes: Routes = [
@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'edit', component:EditItemComponent},
   { path: 'addProyect', component:AddProyectComponent},
   { path: 'editProyect', component:EditProyectComponent},
+  { path: 'login', component:LoginComponent},
 ];
 
 @NgModule({
