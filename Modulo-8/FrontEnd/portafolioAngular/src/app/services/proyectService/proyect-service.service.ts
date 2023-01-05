@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Proyect } from 'src/app/models/proyect'
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { Proyect } from 'src/app/models/proyect'
 export class ProyectServiceService {
   constructor(private http:HttpClient) { }
   Url='http://localhost:8080/api/proyects';
-  getProyect(){
+  getProyect():Observable<Proyect[]>{
     return this.http.get<Proyect[]>(this.Url);
   }
   createProyects(proyect:Proyect){
@@ -23,6 +24,11 @@ export class ProyectServiceService {
   DeleteProyect(proyect:Proyect){
     return this.http.delete<Proyect>(this.Url+"/"+proyect.id)
   }
+   /*
+  getProyectId(id:number):Observable<Proyect>{  
+    return this.http.get<Proyect>(this.Url+'/'+id);
+  }
+   */
 }
 
 

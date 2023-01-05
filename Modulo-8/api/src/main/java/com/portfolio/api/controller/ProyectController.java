@@ -68,6 +68,7 @@ public class ProyectController {
 	}
 	@GetMapping
 	public List<Proyect> readAll(){
+		System.out.println("Saliendo All Proyect");
 		List<Proyect> proyects = StreamSupport
 		.stream(proyectService.findAll().spliterator(), false)
 		.collect(Collectors.toList());
