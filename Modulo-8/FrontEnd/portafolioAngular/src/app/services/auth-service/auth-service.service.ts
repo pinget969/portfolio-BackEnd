@@ -61,7 +61,6 @@ export class AuthService {
   public get headers():HttpHeaders{
     return new HttpHeaders().set('Authorization', 'Bearer ' + localStorage.getItem("token"));
   }
-  
 
   public get logIn(): boolean{
     return (localStorage.getItem('token') !== null);

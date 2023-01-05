@@ -1,0 +1,32 @@
+/*
+    imagen abstract 
+    <a href="https://www.freepik.es/vector-gratis/disenos-fondo-degradado-color-purpura-modernos_34150613.htm#query=abstract&position=9&from_view=search&track=sph">Imagen de logturnal</a> en Freepik
+*/
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+li a{
+     
+    margin: 0px 20px;
+    font-family: system-ui;
+    font-size: 1.3rem;
+    
+}
+.logo-portfolio{
+    
+    background-color: #2A7AE4;
+    border: none;
+    padding: 11px;
+    background: linear-gradient(90deg, #3e2ae4, #32a9fd);
+    font-family: system-ui;
+    font-size: 1.4rem;
+    line-height: 115%;
+    font-weight: bolder;
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

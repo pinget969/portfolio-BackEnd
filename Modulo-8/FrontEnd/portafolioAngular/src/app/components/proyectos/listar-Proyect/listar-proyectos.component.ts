@@ -37,4 +37,5 @@ DeleteProyect(proyect:Proyect){
 }
 
 logIn:Boolean = this.auth.logIn;
+
 }

@@ -30,6 +30,8 @@ public class Proyect implements Serializable {
 	@Column
 	private String tools;
 	@Column
+	private String web;
+	@Column
 	private boolean complete;
 	public Long getId() {
 		return id;
@@ -72,6 +74,12 @@ public class Proyect implements Serializable {
 	}
 	public void setTools(String tools) {
 		this.tools = tools;
+	}
+	public String getWeb() {
+		return web;
+	}
+	public void setWeb(String web) {
+		this.web = web;
 	}
 	public boolean isComplete() {
 		return complete;

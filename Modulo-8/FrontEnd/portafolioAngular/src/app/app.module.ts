@@ -23,11 +23,7 @@ import { AddProyectComponent } from './components/proyectos/add-Proyect/add-proy
 import { EditProyectComponent } from './components/proyectos/edit-proyect/edit-proyect.component';
  
 //Angular Material
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
+
 import { AuthInterceptorService } from './services/auth-interceptor/auth-interceptor.service.service';
 import { LoginComponent } from './components/auth/login/login/login.component';
 
@@ -58,17 +54,8 @@ import { LoginComponent } from './components/auth/login/login/login.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MatSlideToggleModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatToolbarModule,
-    MatIconModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: 'contact' , component:ContactComponent},
-      { path: 'home' , component:HomeComponent},
-      { path: 'proyect' , component:ProyectosComponent},
-      
     ])
   ],
   providers: [

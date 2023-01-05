@@ -7,5 +7,6 @@ export class Proyect{
     content:String | undefined;
     img:String |undefined;
     tools:String | undefined;
+    web:string | undefined
    
 }

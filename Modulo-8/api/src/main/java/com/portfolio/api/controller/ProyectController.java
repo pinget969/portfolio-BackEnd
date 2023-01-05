@@ -54,6 +54,7 @@ public class ProyectController {
 		proyect.get().setContent(proyectDetails.getContent());
 		proyect.get().setImg(proyectDetails.getImg());
 		proyect.get().setTools(proyectDetails.getTools());
+		proyect.get().setWeb(proyectDetails.getWeb());
 		
 		return ResponseEntity.status(HttpStatus.CREATED).body(proyectService.save(proyect.get()));
 		}

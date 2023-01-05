@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth-service/auth-service.service';
+
 
 @Component({
     selector: 'my_nav',
@@ -8,13 +9,15 @@ import { Router } from '@angular/router';
 })
 
 export class my_nav implements OnInit{
-    constructor(private router:Router){
+    constructor(private auth:AuthService){
     }
     ngOnInit(): void {
         
     }
-    Contact(){
-        console.log("Click");
-        this.router.navigate(["contact"]);
-    }
+    logIn:Boolean = this.auth.logIn;
+    
+    logout(){
+        this.auth.logout();
+      }
+    
 }
