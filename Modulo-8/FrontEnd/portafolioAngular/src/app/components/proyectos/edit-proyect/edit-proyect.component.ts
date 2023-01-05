@@ -23,13 +23,14 @@ export class EditProyectComponent implements OnInit {
       this.proyect=data;
     })
   }
-  ActualizarProducto(title:String, company:String, date:String, content:String, img: String, tools:String){
+  ActualizarProducto(title:String, company:String, date:String, content:String, img: String, tools:String, web: String){
         this.proyect.title=title;
         this.proyect.company=company;
         this.proyect.date=date;
         this.proyect.content=content;
         this.proyect.img=img;
         this.proyect.tools=tools;
+        this.proyect.web=web;
         this.service.updateProyect(this.proyect)
   .subscribe(data=>{
     this.proyect=data;
