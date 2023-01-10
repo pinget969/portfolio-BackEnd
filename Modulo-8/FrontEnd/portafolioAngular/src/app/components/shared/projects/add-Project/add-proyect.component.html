@@ -1,0 +1,34 @@
+<div class="container">
+    <form action="" (ngSubmit)="onSubmit()" class="form_project" >
+        <div class="title-add">
+        <h2>Add new project</h2>
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Title</label>    
+            <input class="form-control sub-title-input" type="text" name="title" id="" [(ngModel)]="title"> 
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Company</label>
+            <input class="form-control sub-title-input" type="text" name="company" id="" [(ngModel)]="company"> 
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Date</label>
+            <input class="form-control sub-title-input" type="text" name="date" id="" [(ngModel)]="date">  
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Content</label>
+            <input class="form-control sub-title-input" type="text" name="content" id="" [(ngModel)]="content"> 
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Image</label>
+            <input class="form-control sub-title-input" type="text" name="img" id="" [(ngModel)]="img">  
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Tools</label>
+            <input class="form-control sub-title-input" type="text" name="tools" id="" [(ngModel)]="tools"> 
+        </div>
+        <div class="containter-btn">
+        <button class="custom-btn btn-cancel" aria-current="page" (click)="Cancel_AddNewProject()" >Cancelar</button>
+        <button type="submit" (click)="add_newProject()" class="custom-btn btn-add"> Add</button>
+        </div>
+    </form>

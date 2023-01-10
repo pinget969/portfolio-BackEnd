@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="title-edit">
+        <h1>Editar Project</h1>
+    </div>
+    <div>
+        <form action="">
+        <div class="containter-input">
+            <label for="" class="title-input">Title</label>
+            <input class="form-control sub-title-input" #title [(ngModel)]="proyect.title" name="title" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Company</label>
+            <input class="form-control sub-title-input" #company [(ngModel)]="proyect.company" name="company" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Date</label>
+            <input class="form-control sub-title-input" #date [(ngModel)]="proyect.date" name="date" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Content</label>
+            <input class="form-control sub-title-input" #content [(ngModel)]="proyect.content" name="content" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Image</label>
+            <input class="form-control sub-title-input" #img [(ngModel)]="proyect.img" name="img" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Tolls</label>
+            <input class="form-control sub-title-input" #tools [(ngModel)]="proyect.tools" name="tools" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Link Web</label>
+            <input class="form-control sub-title-input" #web [(ngModel)]="proyect.web" name="web" type="text">
+        </div>
+        <div class="containter-btn">
+            <button class="custom-btn btn-cancel" (click)="CancelProjetc()">Cancel</button>
+            <button class="custom-btn btn-update" (click)="ActualizarProject(title.value, company.value, date.value, content.value, img.value, tools.value, web.value )">Update</button>
+        </div>
+    </form>
+</div>
+</div>
+

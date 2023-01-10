@@ -16,42 +16,19 @@ export class AuthService {
 
   login(username:string, password:string){ 
     localStorage.clear(); 
-    this.http.post(this.url, {email: username, password:password})
+    
+      this.http.post(this.url, {email: username, password:password})
     .subscribe((resp:any) => {
+    this.router.navigate(['home'])
+  .then(() => {
     location.reload();
+  });
     localStorage.setItem('token', resp.jwt);
     });
-  }
-
-
-  
-/*
-  login(username:string, password:string){ 
-    this.http.post(this.url, {email: username, password:password})
-    .pipe(first())
-    .subscribe((response:any) =>{
-      console.log(response);
-      if(response){
-        localStorage.setItem('token', JSON.stringify(response.jwt));
-      }
-
-    })
-
-    /*
-
-    console.log("SALINEDO "+ username + " " + password)
-    localStorage.clear(); 
-    //this.http.post(this.url, {username: username, password:password})
-    this.http.post(this.url, {email: username, password:password})
-    .subscribe((e:any) => {
-    //location.reload();
-    console.log("salienod token " + e.token);
-
-    //localStorage.setItem('token', e.token);
-
-    });
     
-  }*/
+    }
+  
+
 
   logout(){
     localStorage.removeItem('token');

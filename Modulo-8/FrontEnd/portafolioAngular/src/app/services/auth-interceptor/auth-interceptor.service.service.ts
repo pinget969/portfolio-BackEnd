@@ -1,6 +1,7 @@
 import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, throwError } from 'rxjs';
+import Swal from 'sweetalert2';
 
 import {  AuthService } from './../auth-service/auth-service.service';
 
@@ -18,6 +19,7 @@ export class AuthInterceptorService implements HttpInterceptor {
     const token: string = localStorage.getItem('token') || "";
 
     let request = req;
+    
 
     if (token) {
       request = req.clone({
@@ -38,10 +40,18 @@ export class AuthInterceptorService implements HttpInterceptor {
           }
         }
         console.log("Ocurrió un error");
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Incorrect user or password!',
+        })
 
+         
         return throwError(err.error.message);
       })
+      
     );
+    
   }
 
 }

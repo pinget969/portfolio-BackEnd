@@ -19,7 +19,7 @@ public class Skill implements Serializable {
 	private Long id;
 	@Column(length = 50)
 	private String title;
-	@Column(length = 120)
+	@Column(length = 500)
 	private String comentario;
 	@Column
 	private String img;

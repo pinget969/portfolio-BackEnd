@@ -1,0 +1,67 @@
+.contenedor_app-skills{
+     
+    background-color: rgb(252, 252, 252);
+    max-width: 1200px;
+    margin: auto;
+    
+}
+.app-skills{
+    background-color: rgb(217, 220, 245);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1020px;
+    margin: auto;
+    justify-content: flex-start;
+    /*background-color: rgb(146, 192, 230);*/
+}
+
+.btn_add-skill{
+    padding: 25px;
+    font-size: 20px;
+    color: rgb(47, 95, 228);
+    font-weight: 600;
+}
+.title-skill{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+/* */
+
+
+article {
+    /*  leverage cascade for cross-browser gradients  */
+    background: radial-gradient(
+      hsl(100 100% 60%), 
+      hsl(200 100% 60%) 
+    ) fixed;
+    background: conic-gradient(
+      hsl(100 100% 60%), 
+      hsl(200 100% 60%), 
+      hsl(100 100% 60%) 
+    ) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  } 
+  
+  
+  h1, p, body {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 10vmin;
+    line-height: 1.1;
+    max-inline-size: 15ch;
+    margin: auto;
+  }
+  
+  p {
+    font-family: "Dank Mono", ui-monospace, monospace;
+    margin-top: 1ch;
+    line-height: 1.35;
+    max-inline-size: 40ch;
+    margin: auto;
+  }

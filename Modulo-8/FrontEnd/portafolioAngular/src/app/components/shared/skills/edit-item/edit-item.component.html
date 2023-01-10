@@ -1,0 +1,25 @@
+<div class="container">
+    <div>
+        <h1 class="title-edit">Edit skill</h1>
+    </div>
+    <div>
+        <form action="">
+        <div class="containter-input">
+            <label for="" class="title-input">Title</label>
+            <input class="form-control sub-title-input" #title [(ngModel)]="itemEdit.title" name="title" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Commentary</label>
+            <input class="form-control sub-title-input" #comentario [(ngModel)]="itemEdit.comentario" name="comentario" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Image</label>
+            <input class="form-control sub-title-input" #img [(ngModel)]="itemEdit.img" name="img" type="text">
+        </div>
+        <div class="containter-btn">
+            <button class="custom-btn btn-cancel" (click)="CancelItem()">Cancel</button>
+            <button class="custom-btn btn-update" (click)="ActualizarItem(title.value, comentario.value, img.value )">Update</button>
+        </div>
+    </form>
+</div>
+

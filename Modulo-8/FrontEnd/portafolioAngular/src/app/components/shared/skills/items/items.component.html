@@ -1,0 +1,22 @@
+<article>
+    <h1 class="title-skill">Technical Skills</h1>
+   
+  </article>
+<div class="contenedor_app-skills">
+  <div class="container-skills">
+    <div class="app-skills">
+      
+    <app-item   *ngFor="let item of items" 
+    [item]="item"
+    (deleteItem)="deleteItem($event)" >
+    </app-item>
+    <div *ngIf="logIn">
+    <a class="nav-link btn_add-skill" routerLink="/add">Add New Skill</a>
+    </div>
+  </div>
+    </div>
+</div>
+
+
+
+

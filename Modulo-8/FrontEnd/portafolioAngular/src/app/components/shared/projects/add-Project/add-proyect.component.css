@@ -1,0 +1,120 @@
+.container{
+    max-width: 600px;
+}
+.title-add{
+    color: rgb(87, 87, 87);
+    justify-content: center;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    
+}
+.containter-input{
+    padding-top: 25px;
+}
+.title-input{
+    font-size: 18px;
+}
+.sub-title-input{
+    font-size: 18px;
+    color: rgb(87, 87, 87);
+}
+.form-control:focus {
+    border-color: #2c4bff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(21, 53, 233, 0.6);
+}
+
+
+/* BTN */ 
+.containter-btn{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+/* CANCELAR*/ 
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    }
+.btn-cancel {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    border: none;
+    z-index: 1;
+    }
+.btn-cancel:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+    }
+    .btn-cancel:hover {
+    color: #fff;
+    }
+    .btn-cancel:hover:after {
+    top: 0;
+    height: 100%;
+    }
+    .btn-cancel:active {
+    top: 2px;
+    }
+/* ACTUALIZAR */ 
+.btn-add {
+    background: rgb(255,151,0);
+    border: none;
+    z-index: 1;
+    }
+.btn-add:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    } 
+.btn-add:hover {
+    color: #000;
+    }
+.btn-add:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+    }
+.btn-add:active {
+    top: 2px;
+    }

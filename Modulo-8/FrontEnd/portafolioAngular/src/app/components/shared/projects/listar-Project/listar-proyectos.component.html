@@ -1,0 +1,37 @@
+<article>
+    <h1 id="proyectos" class="title-proyect d-flex justify-content-center">Finished Projects</h1>
+   
+  </article>
+
+<div class="container">
+    <div class="container_container_btn-addNewProyect">
+    <div class="container_btn-addNewProyect">
+        <button *ngIf="logIn" routerLink="/addProyect" class="custom-btn btn-addNewProyect">add new projetc<div class="dot"></div></button>
+    </div>
+</div>
+    <div class="row list-project" *ngFor="let proyect of proyects">
+            <div class="col-md-7">
+                <div *ngIf="logIn" class="container-iconos">
+                    <a ><img src="https://i.imgur.com/UcG8rdQ.png" (click)="DeleteProyect(proyect)" alt=""></a>
+                    <a ><img src="https://i.imgur.com/g1yJ3fN.png" (click)="EditarProyect(proyect)" alt=""></a>
+                </div>
+                <div class="cont_img">
+                    <img src={{proyect.img}} alt="">
+                </div>
+        </div>
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5>{{proyect.title}}</h5>
+                <p>{{proyect.content}}</p>
+            </div>
+            <div class="project-info-box mb-10">
+                <p><b>Company:</b> {{proyect.company}}</p>
+                <p><b>Date:</b> {{proyect.date}}</p>
+                <p><b>Designer:</b> {{designer}}</p>
+                <p><b>Tools:</b> {{proyect.tools}}</p>
+            </div>
+            <a  target="_blank" rel="noopener noreferrer" href="{{proyect.web}}"> <button class="custom-btn btn-view_project">VIEW PROJECT</button></a>
+            
+        </div>
+    </div>
+</div>

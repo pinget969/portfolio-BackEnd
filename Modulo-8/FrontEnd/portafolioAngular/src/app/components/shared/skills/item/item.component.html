@@ -1,0 +1,30 @@
+
+<section class="cantainer_card_skill">
+<div class="card">
+    <div class="card-body">
+        <div>
+            <h5 class="card-title"> {{item.title}}</h5>
+        <div class="container-card-text">
+            <p class="card-text"> {{item.comentario}}</p>
+
+        </div>
+        </div>
+        
+        <div class="cont_tex-ico">
+            <div>
+                <img class="img_icono" src="{{item.img}}" alt="Imagen html-5">
+            </div>
+            <div class="cont_btn-info">
+                <button class="btn-more_info"><span>Click!</span><span>Read More</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cont-actions" *ngIf="logIn">
+    <button type="button" (click)="onDelete(item)" class="custom-btn btn-delete"><span>Delete</span></button>
+    <a  href="javascript:void(0);"  data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" (click)="EditarItem(item)">
+        <button class="custom-btn btn-edit"><span>Edit<i class="bx bx-pencil font-size-18"></i></span></button>    
+    </a> </div>
+<div>
+</div>
+</section>
