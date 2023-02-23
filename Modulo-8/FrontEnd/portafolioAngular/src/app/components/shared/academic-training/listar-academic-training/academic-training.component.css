@@ -1,0 +1,73 @@
+.formacion-academica{
+    display: flex;
+    background-color: var(--formacion-academica-background);
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+article {
+    background: radial-gradient(
+      hsl(100 100% 60%), 
+      hsl(200 100% 60%) 
+    ) fixed;
+    background: conic-gradient(
+      hsl(100 100% 60%), 
+      hsl(200 100% 60%), 
+      hsl(100 100% 60%) 
+    ) fixed;
+    -webkit-background-clip: text;
+    background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  } 
+  
+  .title-academicTraining {
+    padding: 20px;
+    font-size: 10vmin;
+  }
+
+.contenedor__formacion-academica{
+    display: block
+}
+
+.contenedor_del_contenedor__formacion-academica{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+ 
+
+}
+.btn_add-skill{
+    background: rgb(230, 94, 94);
+}
+.btn_add-skill:hover{
+    background: rgb(243, 53, 53);
+    color: white;
+}
+.contenedor__iconos-formacion-academica{
+    background-color: var(--contenedor__iconos-skills);
+    height: 200px;
+    width: 250px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.icono_academic{
+    padding: 15px;
+}
+.img__formacion-academica{
+    max-width: 100%;
+    max-height: 100%;
+}
+.nombre-academia-formacion{
+    font-size: 22px;
+}
+.nombre-academia-formacion, .nombre-estado-formacion{
+    margin: 5px;
+    font-family: var(--readex-pro);
+}

@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class ItemService {
-  private url = 'http://localhost:8080/api/skills';
+  private url = 'https://backendproyectfinal-production-8fb3.up.railway.app/api/skills';
   private httpOptions = {
     headers: {
       'Content-Type': 'application/json'
@@ -17,7 +17,7 @@ export class ItemService {
   getItems():Observable<Item[]>{
     return this.http.get<Item[]>(this.url);
   }
-   getItemsId(id:number){
+  getItemsId(id:number){
     return this.http.get<Item>(this.url+"/"+id);
   }
   toggleCompleted(item:Item):Observable<any>{

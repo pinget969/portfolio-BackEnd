@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="title-edit">
+        <h1>Edit Academic training</h1>
+    </div>
+    <div>
+        <form action="">
+        <div class="containter-input">
+            <label for="" class="title-input">Title</label>
+            <input class="form-control sub-title-input" #nameTitleTraining [(ngModel)]="academicTrainings.nameTitleTraining" name="title" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Condition</label>
+            <input class="form-control sub-title-input" #conditionState [(ngModel)]="academicTrainings.conditionState" name="conditionState" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Link image</label>
+            <input class="form-control sub-title-input" #imgTrainingAcademic [(ngModel)]="academicTrainings.imgTrainingAcademic" name="urlImg" type="text">
+        </div>
+        
+        <div class="containter-btn">
+            <button class="custom-btn btn-cancel" (click)="CancelAcademicTraining()">Cancel</button> 
+            <button class="custom-btn btn-update" (click)="ActualizarAcademicTraining(nameTitleTraining.value, conditionState.value, imgTrainingAcademic.value )">Update</button>
+        </div>
+    </form>
+</div>
+</div>
+

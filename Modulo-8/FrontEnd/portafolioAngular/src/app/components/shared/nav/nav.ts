@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth-service/auth-service.service';
 
 
@@ -9,7 +10,8 @@ import { AuthService } from 'src/app/services/auth-service/auth-service.service'
 })
 
 export class my_nav implements OnInit{
-    constructor(private auth:AuthService){
+    
+    constructor(private router:Router, private auth:AuthService){
     }
     ngOnInit(): void {
         
@@ -19,5 +21,7 @@ export class my_nav implements OnInit{
     logout(){
         this.auth.logout();
       }
-    
+      allSkills(){
+        this.router.navigate(['/skills']);
+      }
 }

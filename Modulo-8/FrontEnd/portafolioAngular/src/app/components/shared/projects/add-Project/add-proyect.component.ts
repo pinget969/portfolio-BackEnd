@@ -63,7 +63,7 @@ export class AddProyectComponent implements OnInit {
          'Your projetc has been cancelled..',
          'success'
        )
-       this.router.navigate(['//proyect']);
+       this.router.navigate(['/proyect']);
      }
    }) 
  }

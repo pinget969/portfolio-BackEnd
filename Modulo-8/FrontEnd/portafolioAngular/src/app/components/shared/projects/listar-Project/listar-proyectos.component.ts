@@ -21,7 +21,6 @@ export class ProyectosComponent implements OnInit {
     this.service.getProyect()
     .subscribe(data=>{
       this.proyects=data;
-
   })
 
 }

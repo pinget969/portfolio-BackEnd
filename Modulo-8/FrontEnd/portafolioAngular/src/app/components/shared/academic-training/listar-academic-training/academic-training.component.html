@@ -1,0 +1,27 @@
+
+<section class="formacion-academica">
+    <div class="contenedor">
+      <div class="contenedor__formacion-academica">
+        <article>
+          <h1 id="academicId" class="title-academicTraining d-flex justify-content-center">Academic Training</h1>
+        </article>
+        <div class="contenedor_del_contenedor__formacion-academica" >
+          <div class="contenedor__contenido-formacion-academica" *ngFor="let academic of academicTrainings">
+            <div *ngIf="logIn" class="container-iconos">
+            <a class="icono_academic"><img src="https://i.imgur.com/UcG8rdQ.png" (click)="DeleteAcademicTraining(academic)" alt=""></a>
+            <a class="icono_academic"><img src="https://i.imgur.com/g1yJ3fN.png" (click)="EditAcademicTraining(academic)" alt=""></a>
+          </div>
+            <div class="contenedor__iconos-formacion-academica">
+                <img class="img__formacion-academica" src="{{academic.imgTrainingAcademic}}" alt="">
+            </div>
+            <p class="nombre-academia-formacion">{{academic.nameTitleTraining}}</p>
+            <p class="nombre-estado-formacion">{{academic.conditionState}}</p>
+        </div>
+        </div>
+        <div *ngIf="logIn">
+          <a class="nav-link btn_add-skill" routerLink="/addAcademic">Add new academic training</a>
+          <!--revisar style-->
+          </div>
+    </div>
+    </div>
+</section>

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ProyectServiceService {
   constructor(private http:HttpClient) { }
-  Url='http://localhost:8080/api/proyects';
+  Url='https://backendproyectfinal-production-8fb3.up.railway.app/api/proyects';
   getProyect():Observable<Proyect[]>{
     return this.http.get<Proyect[]>(this.Url);
   }

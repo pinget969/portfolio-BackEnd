@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class HeaderService {
-  url:string = "http://localhost:8080/auth/login";
+  url:string = "https://backendproyectfinal-production-8fb3.up.railway.app/auth/login";
 
   constructor(private http:HttpClient) { }
 }

@@ -9,7 +9,7 @@ import { first } from 'rxjs/operators';
 export class AuthService {
   e!:string;
   token!:string;
-  url:string = "http://localhost:8080/auth/login";
+  url:string = "https://backendproyectfinal-production-8fb3.up.railway.app/auth/login";
   
   //PARAR
   constructor(private http:HttpClient, private router: Router) { }

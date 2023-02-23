@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="title-edit">
+        <h1>Edit Academic training</h1>
+    </div>
+    <div>
+        <form action="">
+        <div class="containter-input">
+            <label for="" class="title-input">Full name</label>
+            <input class="form-control sub-title-input" #nameDeveloper [(ngModel)]="contact.nameDeveloper" name="name" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">It profile</label>
+            <input class="form-control sub-title-input" #perfiDeveloper [(ngModel)]="contact.perfiDeveloper" name="it profile" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Location</label>
+            <input class="form-control sub-title-input" #locationDeveloper [(ngModel)]="contact.locationDeveloper" name="location" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Email</label>
+            <input class="form-control sub-title-input" #emailDeveloper [(ngModel)]="contact.emailDeveloper" name="email" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Web site</label>
+            <input class="form-control sub-title-input" #webSiteDeveloper [(ngModel)]="contact.webSiteDeveloper" name="web site" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Git hub</label>
+            <input class="form-control sub-title-input" #gitHubDeveloper [(ngModel)]="contact.gitHubDeveloper" name="git" type="text">
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Linkedin</label>
+            <input class="form-control sub-title-input" #linkedinDevelper [(ngModel)]="contact.linkedinDevelper" name="linkedin" type="text">
+        </div>
+        
+        <div class="containter-btn">
+            <button class="custom-btn btn-cancel" (click)="CancelContact()">Cancel</button> 
+            <button class="custom-btn btn-update" (click)="UpdateContact(nameDeveloper.value, perfiDeveloper.value, locationDeveloper.value, emailDeveloper.value, webSiteDeveloper.value, gitHubDeveloper.value, linkedinDevelper.value)">Update</button>
+        </div>
+    </form>
+</div>
+</div>
+
+

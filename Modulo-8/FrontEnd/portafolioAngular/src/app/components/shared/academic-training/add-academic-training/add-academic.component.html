@@ -1,0 +1,22 @@
+<div class="container">
+    <form action="" (ngSubmit)="onSubmit()" class="form_academic" >
+        <div class="title-add">
+        <h2>Add new academic training</h2>
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">name title education</label>    
+            <input class="form-control sub-title-input" type="text" name="title" id="" [(ngModel)]="nameTitleTraining"> 
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">condition state</label>
+            <input class="form-control sub-title-input" type="text" name="company" id="" [(ngModel)]="conditionState"> 
+        </div>
+        <div class="containter-input">
+            <label for="" class="title-input">Link image</label>
+            <input class="form-control sub-title-input" type="text" name="date" id="" [(ngModel)]="imgTrainingAcademic">  
+        </div>
+        <div class="containter-btn">
+        <button class="custom-btn btn-cancel" aria-current="page" (click)="Cancel_AddNewAcademicTraining()" >Cancelar</button>
+        <button type="submit" (click)="add_newAcademicTraining()" class="custom-btn btn-add"> Add</button>
+        </div>
+    </form>
