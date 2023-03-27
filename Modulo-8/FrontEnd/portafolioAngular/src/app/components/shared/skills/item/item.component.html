@@ -20,7 +20,7 @@
         </div>
     </div>
 </div>
-<div class="cont-actions" *ngIf="logIn">
+<div *ngIf="logIn">
     <button type="button" (click)="onDelete(item)" class="custom-btn btn-delete"><span>Delete</span></button>
     <a  href="javascript:void(0);"  data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" (click)="EditarItem(item)">
         <button class="custom-btn btn-edit"><span>Edit<i class="bx bx-pencil font-size-18"></i></span></button>    

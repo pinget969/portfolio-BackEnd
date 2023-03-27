@@ -34,9 +34,11 @@ article {
 
 .contenedor_del_contenedor__formacion-academica{
     display: flex;
-    margin: 10px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1120px;
     align-items: center;
+    margin: auto;
+    justify-content: flex-start;
  
 
 }
@@ -51,7 +53,7 @@ article {
     background-color: var(--contenedor__iconos-skills);
     height: 200px;
     width: 250px;
-    margin: 5px;
+    margin: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,4 +72,9 @@ article {
 .nombre-academia-formacion, .nombre-estado-formacion{
     margin: 5px;
     font-family: var(--readex-pro);
+}
+@media (max-width: 530px) {
+    .contenedor_del_contenedor__formacion-academica{
+        justify-content: space-around;
+    }
 }

@@ -24,6 +24,6 @@ export class ItemComponent implements OnInit {
     localStorage.setItem("id",item.id!.toString());
     this.router.navigate(["edit"])
   }
-logIn:boolean = this.auth.logIn;
+  logIn:Boolean = this.auth.logIn;
 
 }

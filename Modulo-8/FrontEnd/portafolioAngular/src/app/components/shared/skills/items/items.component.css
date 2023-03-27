@@ -65,3 +65,8 @@ article {
     max-inline-size: 40ch;
     margin: auto;
   }
+  @media (max-width: 680px) {
+    .app-skills{
+        justify-content: space-around;
+    }
+}

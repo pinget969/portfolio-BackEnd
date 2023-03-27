@@ -190,7 +190,14 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 }
-
+/* NEW BTN EDIT AND DELETE */
+.container-iconos{
+  padding-bottom: 10px;
+}
+.container-iconos a{
+padding-right: 25px;
+cursor: pointer;
+}
 /* More Info*/
 .btn-more_info{
   position: relative;
